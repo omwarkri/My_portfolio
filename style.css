@@ -104,11 +104,41 @@
       transform: translateY(0);
     }
   }
-  .profile-pic {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Makes the image circular */
-    display: block; /* Centers the image */
-    margin: 20px auto; /* Adds space around the image */
-} /* Centers the paragraph */
+  .slider-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    margin-top: 10px;
+  }
+  
+  .image-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .image-slider img {
+    height: 200px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  
+  .arrow {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .arrow:hover {
+    background-color: #555;
+  }
   
